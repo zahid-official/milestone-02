@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Parisienne&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 /* common styles */
 *{
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-    /* font-family: "Parisienne", cursive; */
 }
 img{
     height: auto;
@@ -18,11 +17,25 @@ li{
 a{
     text-decoration: none;
 }
+.btn{
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    border-radius: 42px;
+    padding: 1rem 2.3rem;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+}
+.btn:hover{
+    background: rgb(197, 68, 49);
+}
 
-/* header-area */
+/* header-area starts here*/
 .header-area{
-    padding: 2.5% 10%;
-    background-color: rgb(32, 32, 32);
+    padding: 2.5% 12%;
+    background: rgb(32, 32, 32) linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .header-top{
     display: flex;
@@ -64,4 +77,69 @@ a{
 }
 .bars-icon a:hover{
     color: rgb(230, 83, 60)
+}
+
+/* header-bottom */
+.header-bottom{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-description h2{
+    font-weight: 900;
+    font-size: 4.3rem;
+    color: rgb(255, 255, 255);
+}
+.header-description p{
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+#header-effect{
+    font-size: 7.5rem;
+    line-height: 1rem;
+    font-weight: 500;
+    font-family: 'Miama', sans-serif;
+}
+.header-banner{
+    position: relative;
+}
+.popup{
+    padding: 1.12rem;
+    border-radius: 12px;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.popup h3{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+.popup p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+#workout-videos{
+    top: 20%;
+    right: -10%;
+    position: absolute;
+}
+#video-turorial{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    left: -10%;
+    bottom: 12%;
+    position: absolute;
+}
+.turorial-color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+}
+.turorial-text h3{
+    font-size: 1.5rem;
 }
