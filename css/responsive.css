@@ -1,6 +1,13 @@
 /* for laptop-screen */
 @media screen and (max-width:992px) {
     
+    /* header-area */
+    .navbar ul{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+    }
 }
 
 /* for tab-screen */
