@@ -1,5 +1,10 @@
-/* for laptop-screen */
+/* for large-screen */
 @media screen and (max-width:992px) {
+
+    /* common styles */
+    br{
+        display: none;
+    }
     
     /* header-area */
     .navbar ul{
@@ -12,25 +17,42 @@
         gap: 50px 0;
         flex-direction: column;
     }
-    .header-bottom br{
-        display: none;
+
+    /* main-area */
+    .habit-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hardwork-display img{
+        max-width: 100%;
+    }
+
+}
+
+/* for medium-screen */
+@media screen and (max-width:768px) {
+    
+    /* main-area */
+    .work-hard{
+        flex-direction: column;
     }
 }
 
-/* for tab-screen */
-@media screen and (max-width:768px) {
-    
-}
-
-/* for mobile-screen */
+/* for small-screen */
 @media screen and (max-width:576px) {
-    .btn{
-        font-weight: 600;
-        font-size: .8rem;
-        padding: .8rem;
+
+    /* header-area */
+    .header-area .btn{
+        padding: 1rem;
+        font-size: 0.8rem;
         margin-right: 0.4rem;
     }
     .popup{
         padding: .8rem;
+    }
+
+    /* main-area */
+    .habit-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
