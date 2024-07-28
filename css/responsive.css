@@ -20,13 +20,20 @@
 
     /* main-area */
     .habit-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .hardwork-display img{
         max-width: 100%;
     }
 
+    .exercise-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #training2,
+    #training4{
+        grid-column: span 1;
+    }
 }
 
 /* for medium-screen */
@@ -35,6 +42,10 @@
     /* main-area */
     .work-hard{
         flex-direction: column;
+    }
+
+    .exercise-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

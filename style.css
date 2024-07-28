@@ -43,7 +43,7 @@ p{
 
 /* header-area starts here*/
 .header-area{
-    padding: 5% 8%;
+    padding: 4% 8%;
 }
 .header-top{
     display: flex;
@@ -160,7 +160,9 @@ p{
 .section-title h2{
     font-size: 3rem;
     font-weight: 900;
-    margin-bottom: 1rem;
+}
+.section-title p{
+    margin: 1rem 0 1.7rem;
 }
 .habit-section .section-title{
     text-align: center;
@@ -176,14 +178,14 @@ p{
     border-radius: 50%;
 }
 .build-habit h3{
-    font-size: 1.12rem;
     margin: 1rem 0;
+    font-size: 1.12rem;
 }
 .build-habit p{
     font-size: .87rem;
 }
 
-/* work-hard */
+/* work-hard*/
 .work-hard{
     margin: 4rem 0;
     padding: 2.5rem;
@@ -194,13 +196,83 @@ p{
     align-items: center;
     justify-content: space-between;
 }
-.section-title .btn{
-    margin-top: 1.5rem;
-}
 .hardwork-display{
     text-align: right;
 }
 .hardwork-display img{
     max-width: 80%;
     border-radius: 18px;
+}
+
+/* exercise-section */
+.exercise-section{
+    margin: 7rem 0;
+}
+.exercise-container{
+    margin-top: 4rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.exercise{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    /* background-image: url('images/exercise/exercise1.jpg'); */
+}
+.exercise img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background-color: rgba(6, 255, 210, 0.5);
+    position: absolute;
+    top: -100%;
+}
+.exercise:hover .overlay{
+    top: 0;
+}
+.overlay span{
+    left: 10%;
+    bottom: 10%;
+    position: absolute;
+    color: #fff;
+}
+.overlay span:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+#training2{
+    grid-column: span 2;
+}
+#training2 .overlay{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+#training2 .overlay span{
+    bottom: 80%;
+}
+#training3 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#training4{
+    grid-column: span 2;
+}
+#training4 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#training4 .overlay span{
+    left: 50%;
+    bottom: 75%;
+}
+#training5 .overlay{
+    background-color: rgba(66, 255, 0, 0.3);
+}
+#training6 .overlay{
+    background-color: rgba(0, 71, 255, 0.3);
 }
