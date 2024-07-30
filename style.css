@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 /* common styles */
 body{
-    background: rgb(32, 32, 32) linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: rgb(32, 32, 32) linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0),rgba(0,0,0,.9) 100%);
 }
 *{
     margin: 0;
@@ -30,7 +30,7 @@ p{
     border: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-right: 1rem;
     padding: 1rem 3rem;
     border-radius: 42px;
@@ -91,7 +91,7 @@ p{
 
 /* header-bottom */
 .header-bottom{
-    padding: 50px 0;
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,8 +154,11 @@ p{
 }
 
 /* main-area */
-.main-area{
+.habit-section{
     padding: 0 8%;
+}
+.section-title{
+    margin: 4rem 0;
 }
 .section-title h2{
     font-size: 3rem;
@@ -168,7 +171,7 @@ p{
     text-align: center;
 }
 .habit-container{
-    padding: 80px 0;
+    padding-bottom: 80px;
     gap: 30px;
     display: grid;
     text-align: center;
@@ -185,12 +188,15 @@ p{
     font-size: .87rem;
 }
 
-/* work-hard*/
+/* work-hard-section*/
+.work-hard-section{
+    padding: 0 8%;
+}
 .work-hard{
     margin: 4rem 0;
     padding: 2.5rem;
     border-radius: 18px;
-    background: rgb(34, 34, 34);
+    background: rgb(44, 44, 44);
     gap: 1.5rem;
     display: flex;
     align-items: center;
@@ -206,10 +212,10 @@ p{
 
 /* exercise-section */
 .exercise-section{
+    padding: 0 8%;
     margin: 7rem 0;
 }
 .exercise-container{
-    margin-top: 4rem;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -275,4 +281,90 @@ p{
 }
 #training6 .overlay{
     background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* calculator-section */
+.calculator-title{
+    padding: 0 8%;
+}
+.calculator-title .section-title{
+    width: 55%;
+    margin: 0 auto 4rem;
+}
+.bmi-calulator{
+    padding: 3% 8% 5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-calulator h3{
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+.bmi-calulator p{
+    margin: -1rem 0 1.8rem;
+}
+.calculator-chart,
+.self-calculation{
+    width: 48%;
+}
+.calculator-chart table{
+    border-collapse: collapse;
+}
+.calculator-chart table td{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.calculator-chart table td,th{
+    text-align: left;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.self-calculation input{
+    width: 35%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 1rem 1.8rem;
+    margin: 0.6rem 0.3rem;
+    box-sizing: border-box;
+    color: rgb(117, 117, 117);
+    background: rgba(255, 255, 255, 0.1);
+}
+.self-calculation input::-webkit-outer-spin-button,
+.self-calculation input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+.self-calculation .btn{
+    display: block;
+    margin-top: 1.5rem;
+}
+.select-container{
+    width: 35%;
+    position: relative;
+    display: inline-block;
+}
+.select-container .icon-container{
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 35%;
+}
+.select-box{
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    appearance: none;
+    border-radius: 8px;
+    padding: 1rem 1.8rem;
+    margin: 0.6rem 0.3rem;
+    box-sizing: border-box;
+    color: rgb(117, 117, 117);
+    background: rgb(57, 57, 57);
+}
+.activity{
+    width: 72.5%;
 }

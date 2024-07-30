@@ -34,6 +34,25 @@
     #training4{
         grid-column: span 1;
     }
+
+    .bmi-calulator{
+        align-items: center;
+        flex-direction: column;
+    }
+    .calculator-section .section-title,
+    .calculator-chart,
+    .self-calculation{
+        width: 100%;
+    }
+    
+    .self-calculation input,
+    .select-container{
+        width: 47.5%;
+    }
+    .activity{
+        width: 97%;
+    }
+
 }
 
 /* for medium-screen */
@@ -65,5 +84,13 @@
     /* main-area */
     .habit-container{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .self-calculation input,
+    .select-container{
+        width: 45%;
+    }
+    .activity{
+        width: 93%;
     }
 }

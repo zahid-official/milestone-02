@@ -85,14 +85,16 @@
         </section>
         <!-- habit-section end -->
          
-        <section class="work-hard">
-            <div class="section-title">
-                <h2>Run an Extra <br> Mile Easily</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                <button class="btn">Join Now</button>
-            </div>
-            <div class="hardwork-display">
-                <img src="images/6.run.jpg" alt="run">
+        <section class="work-hard-section">
+            <div class="work-hard">
+                <div class="section-title">
+                    <h2>Run an Extra <br> Mile Easily</h2>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <div class="hardwork-display">
+                    <img src="images/6.run.jpg" alt="run">
+                </div>
             </div>
         </section>
         <!-- work-hard-section end -->
@@ -139,6 +141,83 @@
                     <div class="overlay">
                         <span>Lorem Ipsum</span>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- exercise-section ends -->
+
+        <section class="calculator-section">
+            <div class="calculator-title">
+                <div class="section-title">
+                    <h2>BMI Calculator</h2>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+                </div>
+            </div>
+
+            <div class="bmi-calulator">
+                <div class="calculator-chart">
+                    <h3>BMI Calculator Chart</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="self-calculation">
+                    <h3>Calculate your BMI</h3>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+                    <form action="">
+                        <input type="number" placeholder="Height/cm">
+                        <input type="number" placeholder="Weight/kg">
+                        <input type="number" placeholder="Age">
+                        <div class="select-container">
+                            <select name="identities" id="" class="select-box">
+                                <option value="gender">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="trans">Custom</option>
+                            </select>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="select-container activity">
+                            <select name="activities" id="" class="select-box">
+                                <option value="factor">Select an activity factor</option>
+                                <option value="exercise">Sedentary</option>
+                                <option value="exercise">Light exercise</option>
+                                <option value="exercise">Moderate exercise</option>
+                                <option value="exercise">Heavy exercise</option>
+                            </select>
+                            <div class="icon-container">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Calculate</button>
+                    </form>
                 </div>
             </div>
         </section>
