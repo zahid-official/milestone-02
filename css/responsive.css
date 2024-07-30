@@ -53,6 +53,10 @@
         width: 97%;
     }
 
+    .our-team{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* for medium-screen */
@@ -63,9 +67,7 @@
         flex-direction: column;
     }
 
-    .exercise-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
+    
 }
 
 /* for small-screen */
@@ -92,5 +94,12 @@
     }
     .activity{
         width: 93%;
+    }
+    .exercise-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+    .our-team{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
