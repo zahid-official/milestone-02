@@ -368,7 +368,7 @@ p{
 
 /* team-section */
 .team-section{
-    padding: 0 8% 4%;
+    padding: 0 8% 8%;
 }
 .team-section .section-title{
     text-align: center;
@@ -394,4 +394,48 @@ p{
     height: 100%;
     object-fit: cover;
     border-radius: 18px;
+}
+
+/* footer-area */
+.footer-area{
+    padding: 2% 8%;
+    background-color: rgb(26, 26, 26);
+}
+.footer-area .section-title{
+    margin: 0;
+}
+.footer-area .section-title h2{
+    font-style: italic;
+    color: rgb(230, 83, 60);
+}
+.footer-top{
+    margin: 4rem 0;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.our-service{
+    white-space: nowrap;
+}
+.our-service1{
+    grid-column: 3/4;
+}
+.footer-top h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.footer-top ul a{
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: rgb(132, 132, 132);
+}
+.footer-top ul a:hover{
+    color: rgb(230, 83, 60);
+}
+
+.footer-bottom{
+    padding-top: 3%;
+    font-size: 1.12rem;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }

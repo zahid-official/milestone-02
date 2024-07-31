@@ -22,11 +22,9 @@
     .habit-container{
         grid-template-columns: repeat(2, 1fr);
     }
-
     .hardwork-display img{
         max-width: 100%;
     }
-
     .exercise-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -34,7 +32,6 @@
     #training4{
         grid-column: span 1;
     }
-
     .bmi-calulator{
         align-items: center;
         flex-direction: column;
@@ -44,7 +41,6 @@
     .self-calculation{
         width: 100%;
     }
-    
     .self-calculation input,
     .select-container{
         width: 47.5%;
@@ -52,11 +48,17 @@
     .activity{
         width: 97%;
     }
-
     .our-team{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* footer-area */
+    .footer-top{
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .our-service1{
+        grid-column: 2/3;
+    }
 }
 
 /* for medium-screen */
@@ -67,7 +69,13 @@
         flex-direction: column;
     }
 
-    
+    /* footer-area */
+    .footer-top{
+        grid-template-columns: 1fr;
+    }
+    .our-service1{
+        grid-column: auto;
+    }
 }
 
 /* for small-screen */
@@ -82,12 +90,13 @@
     .popup{
         padding: .8rem;
     }
-
     /* main-area */
     .habit-container{
         grid-template-columns: repeat(1,1fr);
     }
-
+    .work-hard{
+        padding: 1rem;
+    }
     .self-calculation input,
     .select-container{
         width: 45%;
@@ -98,7 +107,6 @@
     .exercise-container{
         grid-template-columns: repeat(1, 1fr);
     }
-   
     .our-team{
         grid-template-columns: repeat(1, 1fr);
     }
