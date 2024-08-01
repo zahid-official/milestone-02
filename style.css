@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
 /* common styles */
 body{
-    background: rgb(32, 32, 32) linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0),rgba(0,0,0,.9) 100%);
+    background-color: rgb(0, 0, 0);
 }
 *{
     margin: 0;
@@ -31,11 +31,11 @@ p{
     cursor: pointer;
     font-weight: 600;
     font-size: 1rem;
-    margin-right: 1rem;
     padding: 1rem 3rem;
     border-radius: 42px;
     color: rgb(255, 255, 255);
     background: rgb(230, 83, 60);
+    transition: .3s;
 }
 .btn:hover{
     background: rgb(197, 68, 49);
@@ -44,6 +44,7 @@ p{
 /* header-area starts here*/
 .header-area{
     padding: 4% 8%;
+    background: rgb(32, 32, 32) linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0),rgba(0,0,0,.9) 100%);
 }
 .header-top{
     display: flex;
@@ -103,6 +104,15 @@ p{
 .header-description p{
     margin: 20px 0 30px;
 }
+.header-description .btn{
+    margin-right: 1rem;
+    background-color: transparent;
+    outline: 1px solid white;
+}
+.header-description .btn:hover{
+    outline: none;
+    background-color: rgb(230, 83, 60);
+}
 #header-effect{
     font-weight: 500;
     font-size: 7.5rem;
@@ -158,7 +168,7 @@ p{
     padding: 0 8%;
 }
 .section-title{
-    margin: 4rem 0;
+    margin: 5rem 0;
 }
 .section-title h2{
     font-size: 3rem;
@@ -196,7 +206,7 @@ p{
     margin: 4rem 0;
     padding: 2.5rem;
     border-radius: 18px;
-    background: rgb(44, 44, 44);
+    background: rgb(34, 34, 34);
     gap: 1.5rem;
     display: flex;
     align-items: center;
@@ -368,7 +378,7 @@ p{
 
 /* team-section */
 .team-section{
-    padding: 0 8% 8%;
+    padding: 0 8%;
 }
 .team-section .section-title{
     text-align: center;
@@ -396,9 +406,49 @@ p{
     border-radius: 18px;
 }
 
+/* membership-section */
+.membership-section{
+    padding: 2% 8% 7%;
+}
+.our-packages{
+    padding: 3rem 2rem;
+    border-radius: 18px;
+    background-color: rgb(34, 34, 34);
+    gap: 2rem;
+    display: flex;
+}
+.membership-card{
+    padding: 4.5rem 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.836);
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(#010101, #1c2226 25%, #1c2226 75%, #010101);
+}
+.membership-card h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.membership-card h3{
+    position: relative;
+    margin: 1rem 0 1.5rem;
+}
+.membership-card b{
+    top: 3px;
+    left: -12px;
+    position: absolute;
+}
+.membership-card h3 span{
+    font-size: 3.5rem;
+}
+.membership-card .btn{
+    padding: 1rem 2rem;
+}
+
+
+
 /* footer-area */
 .footer-area{
-    padding: 2% 8% 2.5%;
+    padding: 2% 8%;
     background-color: rgb(26, 26, 26);
 }
 .footer-area .section-title{
