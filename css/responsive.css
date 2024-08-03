@@ -28,10 +28,15 @@
     .exercise-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    #training1,
     #training2,
-    #training4{
-        grid-column: span 1;
+    #training3,
+    #training4,
+    #training5,
+    #training6{
+        grid-column: auto;
     }
+    
     .bmi-calulator{
         align-items: center;
         flex-direction: column;

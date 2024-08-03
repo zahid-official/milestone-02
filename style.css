@@ -238,8 +238,47 @@ p{
 .exercise-container{
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-
+    grid-template-columns: repeat(12,1fr);
+}
+#training1{
+    grid-column: 1/span 3;
+}
+#training2{
+    grid-column: 4/span 6;
+}
+#training3{
+    grid-column: 10/span 3;
+}
+#training4{
+    grid-column: 1/span 5;
+}
+#training5{
+    grid-column: 6/span 3;
+}
+#training6{
+    grid-column: 9/span 4;
+}
+#training2 .overlay{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+#training2 .overlay span{
+    bottom: 80%;
+}
+#training3 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#training4 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#training4 .overlay span{
+    left: 50%;
+    bottom: 75%;
+}
+#training5 .overlay{
+    background-color: rgba(66, 255, 0, 0.3);
+}
+#training6 .overlay{
+    background-color: rgba(0, 71, 255, 0.3);
 }
 .exercise{
     overflow: hidden;
@@ -270,34 +309,6 @@ p{
 .overlay span:hover{
     cursor: pointer;
     color: var(--black-color);
-}
-#training2{
-    grid-column: span 2;
-}
-#training2 .overlay{
-    background-color: rgba(255, 0, 0, 0.3);
-}
-#training2 .overlay span{
-    bottom: 80%;
-}
-#training3 .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#training4{
-    grid-column: span 2;
-}
-#training4 .overlay{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-#training4 .overlay span{
-    left: 50%;
-    bottom: 75%;
-}
-#training5 .overlay{
-    background-color: rgba(66, 255, 0, 0.3);
-}
-#training6 .overlay{
-    background-color: rgba(0, 71, 255, 0.3);
 }
 
 /* calculator-section */
